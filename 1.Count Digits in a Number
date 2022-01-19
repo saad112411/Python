@@ -2,7 +2,7 @@ n = int(input("Enteer a number :"))
 d = int(input("enter a digit :"))
 
 def  fun(n,d):
-    count = 0
+    count = 0 
     while(n>0):
         digit = n%10
         if (digit==d):
