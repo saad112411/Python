@@ -1,15 +1,17 @@
-n = int(input())
+n = int(input("Enter a Decimal point"))
+b = int(input("Enter a base" ))
 i=0
 ans =0
 while (n!=0):
-    dig = n%8 
+    dig = n%b
     ans = ans+ dig*10**i 
     
-    n=n//8 
+    n=n//b 
     i+=1 
     
 print(ans)
 
 
 /* input 694
+   input 8
   output 1266 */
