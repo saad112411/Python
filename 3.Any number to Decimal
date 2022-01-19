@@ -1,0 +1,16 @@
+
+n= int(input("Enter a number"))
+b = int(input("Enter a Base"))
+i= 0
+ans =0
+while(n!=0):
+    dig = n%10
+    ans = ans+dig*b**i 
+    i+=1 
+    n =n//10
+    
+print(ans)
+
+/* 11111111
+   2
+   o/p 255
