@@ -1,0 +1,13 @@
+
+n= int(input("Enter a number :"))
+b = int(input("Enter a Current n number Base :"))
+c = int(input("Enter a number wich base to convert"))
+i= 0
+ans =0
+while(n!=0):
+    dig = n%c 
+    ans = ans+dig*b**i 
+    i+=1 
+    n =n//c 
+    
+print(ans)
