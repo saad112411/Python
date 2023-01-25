@@ -1,0 +1,16 @@
+import mysql.connector
+
+sudh = mysql.connector.connect(
+    host="localhost",
+    user="abc",
+    password="password"
+)
+cur=sudh.cursor()
+cur.execute('use test1')
+#cur.execute("create table test1_tb(name varchar(25), roll_no INT ,mail_id varchar(25))")
+cur.execute("insert into test1_tb values ('saad','25','saad.beed2018@gmail.com')")
+
+sudh.commit()
+cur.execute('select * from test1_tb')
+for i in cur :
+    print(i)
